@@ -1,0 +1,6 @@
+{
+  "name": "PrivaResume AI",
+  "description": "A privacy-first Resume RAG assistant. Securely upload your resume PDF to get instant Q&A and personalized job recommendations without storing data on any server.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["AI-Powered RAG", "Secure PDF Analysis", "Job Recommendations"]
+}
