@@ -1,16 +1,27 @@
-# Run and deploy your AI Studio app
+# PrivaResume AI - Vercel Deployment Guide
 
-This contains everything you need to run your app locally.
+This project is a privacy-first, AI-powered resume analyzer built with React, Vite, and Gemini.
 
-View your app in AI Studio: https://ai.studio/apps/a644cb48-d75a-4628-b18d-85f531ca93fa
+## Deployment Steps
 
-## Run Locally
+To deploy this application to Vercel:
 
-**Prerequisites:**  Node.js
+1. **Push to GitHub**: Upload this codebase to a GitHub repository.
+2. **Connect to Vercel**: 
+   - Go to [vercel.com](https://vercel.com) and click **"Add New" -> "Project"**.
+   - Import your GitHub repository.
+3. **Configure Framework**: Vercel should automatically detect **Vite**.
+4. **Add Environment Variables**:
+   - Add `GEMINI_API_KEY` to the **Environment Variables** section.
+   - You can get your API key from [Google AI Studio](https://aistudio.google.com/app/apikey).
+5. **Deploy**: Click **"Deploy"**.
 
+## Privacy Features
+The application processes all resume text locally in the browser's memory. No resume data is stored on any server or database.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Technologies Used
+- **React 19 & Vite**
+- **Google Gemini API** (via `@google/genai`)
+- **pdfjs-dist** (for client-side PDF parsing)
+- **Tailwind CSS**
+- **Framer Motion** (for animations)
